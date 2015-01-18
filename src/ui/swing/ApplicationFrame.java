@@ -16,6 +16,7 @@ public class ApplicationFrame extends JFrame {
         this.setSize(1040, 850);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
+        this.createComponents();
     }
 
     public ImageViewer getImageViewer() {
@@ -29,8 +30,8 @@ public class ApplicationFrame extends JFrame {
     
     private JPanel createToolbar() {
         JPanel panel = new JPanel();
-        panel.add(createButton("sig"));
-        panel.add(createButton("ant"));
+        panel.add(createButton("<"));
+        panel.add(createButton(">"));
         return panel;
     }
 
