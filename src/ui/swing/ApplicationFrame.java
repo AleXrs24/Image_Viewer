@@ -7,7 +7,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class ApplicationFrame extends JFrame {
-    
     private ImageViewer imageViewer;
     private ActionListenerFactory factory;
     
@@ -19,5 +18,31 @@ public class ApplicationFrame extends JFrame {
         this.setLocationRelativeTo(null);
     }
 
+    public ImageViewer getImageViewer() {
+        return imageViewer;
+    }
     
+    private void createComponents() {
+        this.add(createToolbar(), BorderLayout.SOUTH);
+        this.add(createImagePanel());
+    }
+    
+    private JPanel createToolbar() {
+        JPanel panel = new JPanel();
+        panel.add(createButton("sig"));
+        panel.add(createButton("ant"));
+        return panel;
+    }
+
+    private JButton createButton(String label) {
+        JButton button = new JButton(label);
+        button.addActionListener(factory.create(label));
+        return button;
+    }
+
+    private JPanel createImagePanel() {
+        ImagePanel panel = new ImagePanel();
+        imageViewer = panel;
+        return panel;
+    } 
 }
