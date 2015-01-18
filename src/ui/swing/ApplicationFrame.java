@@ -30,8 +30,8 @@ public class ApplicationFrame extends JFrame {
     
     private JPanel createToolbar() {
         JPanel panel = new JPanel();
-        panel.add(createButton(""));
-        panel.add(createButton(""));
+        panel.add(createButton("<"));
+        panel.add(createButton(">"));
         return panel;
     }
 
