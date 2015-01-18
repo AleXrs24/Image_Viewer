@@ -17,34 +17,7 @@ public class ApplicationFrame extends JFrame {
         this.setSize(1040, 850);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        this.createComponents();
     }
 
-    public ImageViewer getImageViewer() {
-        return imageViewer;
-    }
     
-    private void createComponents() {
-        this.add(createToolbar(), BorderLayout.SOUTH);
-        this.add(createImagePanel());
-    }
-    
-    private JPanel createToolbar() {
-        JPanel panel = new JPanel();
-        panel.add(createButton("sig"));
-        panel.add(createButton("ant"));
-        return panel;
-    }
-
-    private JButton createButton(String label) {
-        JButton button = new JButton(label);
-        button.addActionListener(factory.create(label));
-        return button;
-    }
-
-    private JPanel createImagePanel() {
-        ImagePanel panel = new ImagePanel();
-        imageViewer = panel;
-        return panel;
-    }
 }
