@@ -11,7 +11,7 @@ public class ApplicationFrame extends JFrame {
     private ActionListenerFactory factory;
     
     public ApplicationFrame(ActionListenerFactory factory) {
-        super("Image Browser");
+        super("Image_Viewer");
         this.factory = factory;
         this.setSize(1040, 850);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
