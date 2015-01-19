@@ -19,6 +19,7 @@ public class application {
     public static void main(String[] args) {
         new application().execute();
     }
+    
     private static final String PATH = "C:\\Users\\aaleXrs24\\Pictures\\Lanzarote-La Graciosa 2014";
     private Map<String, command> commandMap;
     private ApplicationFrame frame;
