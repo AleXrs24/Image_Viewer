@@ -1,7 +1,6 @@
 package model;
 
 public class RealImage extends Image {
-    
     private final Bitmap bitmap;
 
     public RealImage(Bitmap bitmap) {

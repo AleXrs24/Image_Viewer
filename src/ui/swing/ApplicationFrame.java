@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class ApplicationFrame extends JFrame {
+    
     private ImageViewer imageViewer;
     private ActionListenerFactory factory;
     

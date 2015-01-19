@@ -3,8 +3,7 @@ package model;
 public abstract class Image {
     
     private Image nextImage;
-    private Image prevImage;
-    
+    private Image prevImage;  
     public abstract Bitmap getBitmap();
 
     public Image getNextImage() {

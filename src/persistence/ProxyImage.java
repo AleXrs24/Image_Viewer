@@ -3,8 +3,7 @@ package persistence;
 import model.Bitmap;
 import model.Image;
 
-public class ProxyImage extends Image {
-    
+public class ProxyImage extends Image {   
     private final ImageLoader loader;
     private Image realImage;
 

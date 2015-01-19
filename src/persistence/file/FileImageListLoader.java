@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileImageListLoader extends ImageListLoader {
-
     private final String path;
 
     public FileImageListLoader(String path) {

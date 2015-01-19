@@ -10,7 +10,6 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 
 public class ImagePanel extends JPanel implements ImageViewer {
-    
     private Image image;
     
     private int initialX;

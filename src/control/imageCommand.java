@@ -1,7 +1,6 @@
 package control;
 
 import userInterface.ImageViewer;
-
 public abstract class imageCommand implements command {
 
     private final ImageViewer viewer;
