@@ -27,7 +27,6 @@ public class ApplicationFrame extends JFrame {
         this.add(createToolbar(), BorderLayout.SOUTH);
         this.add(createImagePanel());
     }
-    
     private JPanel createToolbar() {
         JPanel panel = new JPanel();
         panel.add(createButton("<"));
